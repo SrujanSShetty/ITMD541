@@ -7,11 +7,35 @@ body {
     color: #E6E6E6; /* Light Text for Dark Background */
 }
 
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Background blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
 /* Header Styling */
 h1 {
     color: #B7410E; /* Deep Rust */
     text-align: center;
     padding: 20px;
+}
+
+/* Profile Picture Styling */
+.profile {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #87CEEB; /* Sky Blue */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 /* Section Title Styling */
@@ -39,13 +63,17 @@ a:hover {
     color: #87CEEB; /* Sky Blue */
 }
 
-/* Container Styling */
+/* Container Styling with Glass Effect */
 .container {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
-    background-color: #444444; /* Darker Charcoal */
-    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(68, 68, 68, 0.5); /* Slightly transparent charcoal */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Item Styling */
@@ -60,7 +88,7 @@ a:hover {
 /* Projects Section */
 ul {
     list-style-type: square;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 ul li {
