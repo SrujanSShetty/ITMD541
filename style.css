@@ -1,3 +1,4 @@
+/* General Reset and Global Styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,23 +8,16 @@
 
 body {
     background-color: #2c404f;
-    color: #333;
+    color: #fff; /* Unified color for the text across sections */
     line-height: 1.6;
     padding: 20px;
 }
 
-h1{
+/* Headings Styling */
+h1, h2 {
     text-align: center;
     color: #42a5f5;
-}
- 
-h2 {
-    text-align: center;
-    font-size: 1.8em;
-    color: #42a5f5;
-}
-
-h1 {
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
@@ -31,10 +25,12 @@ h2 {
     margin-top: 30px;
 }
 
-.glass {
+/* Glassmorphism Style Container */
+.glass, .projects-container, .Interests-container {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     padding: 20px;
+    margin: 20px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -42,6 +38,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Profile Image Styling */
 .profile {
     display: block;
     margin: 0 auto;
@@ -49,13 +46,15 @@ h2 {
     border-radius: 50%;
 }
 
-.about-container, .contact-container {
-    margin: 20px;
+/* About Section Styling */
+.about-container p,
+.about-course-container p,
+.about-course-container strong {
+    font-size: 1.5em;
+    color: #fff;
 }
 
-.about-container p {
-    font-size: 1.5em;
-}
+/* Contact Section Styling */
 .contact-container ul {
     list-style: none;
     padding: 0;
@@ -66,7 +65,7 @@ h2 {
 }
 
 .contact-container a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -74,33 +73,17 @@ h2 {
 .contact-container a img {
     vertical-align: middle;
     margin-right: 10px;
-    width: 48px; /* Adjust size as needed */
-    height: 48px; /* Ensure aspect ratio */
+    width: 48px;
+    height: 48px;
 }
 
-/* Glassy Service Box Style */
-.projects-container {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    margin-bottom: 20px;
-}
-
-/* Title Styling */
+/* Project List Styling */
 .projects-container h2 {
-    text-align: center;
     margin-bottom: 20px;
-    font-size: 1.5em;
-    color: #42a5f5;
 }
 
-/* List Styling */
 .projects-container ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -110,65 +93,44 @@ h2 {
 }
 
 .projects-container ul li strong {
-    color: #ffffff;
-    font-size: 1.1.5em;
+    font-size: 1.3em;
 }
 
-/* Add subtle hover effect to make it more interactive */
+/* Hover Effect for Projects List */
 .projects-container ul li:hover {
-    background-color: #333333; /* Dark Charcoal */
+    background-color: #6b6767;
     padding: 10px;
     border-radius: 10px;
     transition: 0.3s;
 }
 
-/* Body and List Text Color */
-body, .projects-container {
-    color: #ffffff;
-}
-
-.Interests-container {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    margin-bottom: 20px;
-}
-
+/* Interests Section Styling */
 .Interests-container h2 {
-    color: #42a5f5; /* Heading color */
     margin-bottom: 15px;
 }
 
 .Interests-container ul {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     padding: 0;
 }
 
 .Interests-container li {
-    font-size: 1.5em; /* Adjust font size as needed */
-    color: #ffffff; /* Text color */
+    font-size: 1.5em;
 }
 
+/* Skills Section (Icon Display) */
 .skills {
-    text-align: center; /* Center-align the icons */
+    text-align: center;
     margin: 20px 0;
 }
 
 .skills img {
     margin: 5px;
-    width: 48px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 48px;
+    height: auto;
 }
 
-
-div {
-    margin: 20px 0;
-}
-
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
